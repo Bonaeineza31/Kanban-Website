@@ -32,7 +32,7 @@ Feel free to access it at https://kanban-website-nine.vercel.app/
 ##  How to Run
 
 # Clone the repository
-git clone https://github.com/your-username/task-planner-app.git
+git clone https://github.com/Bonaeineza31/Kanban-Website.git
 
 # Navigate into the project folder
 cd task-planner-app
