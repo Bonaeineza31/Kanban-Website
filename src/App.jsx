@@ -1,4 +1,3 @@
-
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom"
 import { useState } from "react"
 import Layout from "./components/layout"
@@ -36,8 +35,8 @@ function App() {
   const addTask = (name, duration) => {
     const newTask = {
       id: Date.now(),
-      name: name,
-      duration: duration,
+      name,
+      duration,
       createdAt: new Date(),
     }
     setTasks([...tasks, newTask])
@@ -54,18 +53,14 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Navigate to="/all" replace />} />
-
         <Route path="/" element={<Layout onAddTask={addTask} />}>
-
+          <Route index element={<Navigate to="/all" replace />} />
           <Route path="daily" element={<Daily tasks={tasks} onEditTask={editTask} onDeleteTask={deleteTask} />} />
           <Route path="weekly" element={<Weekly tasks={tasks} onEditTask={editTask} onDeleteTask={deleteTask} />} />
           <Route path="monthly" element={<Monthly tasks={tasks} onEditTask={editTask} onDeleteTask={deleteTask} />} />
           <Route path="yearly" element={<Yearly tasks={tasks} onEditTask={editTask} onDeleteTask={deleteTask} />} />
           <Route path="all" element={<All tasks={tasks} onEditTask={editTask} onDeleteTask={deleteTask} />} />
-
-          {/* Fallback route */}
-          <Route path="*" element={<Navigate to="/daily" replace />} />
+          <Route path="*" element={<Navigate to="/all" replace />} />
         </Route>
       </Routes>
     </Router>
