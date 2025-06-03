@@ -1,8 +1,52 @@
-# React + Vite
+# Task Planner App 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean and minimalistic productivity app for managing your tasks by duration: Daily, Weekly, Monthly, and Yearly.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+# Live Link
+
+Feel free to access it at https://kanban-website-nine.vercel.app/ 
+##  Features
+
+- Add, edit, and delete tasks
+- Filter tasks by:
+  - Daily
+  - Weekly
+  - Monthly
+  - Yearly
+  - All
+- Clean and responsive UI
+- Beautiful color theme with soft rounded layout
+
+
+## 🛠️ Tech Stack
+
+- **React** (with Hooks)
+- **React Router v6**
+- **JavaScript (ES6)**
+
+
+
+##  How to Run
+
+# Clone the repository
+git clone https://github.com/your-username/task-planner-app.git
+
+# Navigate into the project folder
+cd task-planner-app
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+
+Make sure you have Node.js and npm installed.
+
+
+#### Acknowledgements
+Built with ❤️ by Ineza Gisubizo boane.
+
+Let me know if you want a dark/light theme toggle or animations added.
