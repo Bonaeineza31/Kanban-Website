@@ -49,39 +49,47 @@ function Layout({ onAddTask }) {
     <div>
       {/* Navbar */}
       <nav className="navbar">
-        <div className="navbar-container">
-          <h1 className="navbar-title">
-             Make a <span style={{ color: '#b5baff' }}>better</span> plan
-            <br />
-            for your life
-          </h1>
-          <p className="navbar-subtitle">
-            Whoever you are, Whatever you are looking for, we have the perfect place for you
-          </p>
+  <div className="navbar-container">
+    <h1 className="navbar-title">
+      Make a <span style={{ color: '#b5baff' }}>better</span> plan
+      <br />
+      for your life
+    </h1>
 
-          <form className="navbar-form" onSubmit={handleSubmit}>
-            <select className="duration-select" value={duration} onChange={(e) => setDuration(e.target.value)}>
-              <option value="daily">Daily</option>
-              <option value="weekly">Weekly</option>
-              <option value="monthly">Monthly</option>
-              <option value="yearly">Yearly</option>
-            </select>
+    <div className="navbar-bottom">
+      <p className="navbar-subtitle">
+        Whoever you are, Whatever you are looking for, we have the perfect place for you
+      </p>
 
-            <input
-              type="text"
-              className="task-input"
-              placeholder="Task"
-              value={taskName}
-              onChange={(e) => setTaskName(e.target.value)}
-            />
+      <form className="navbar-form" onSubmit={handleSubmit}>
+        <select
+          className="duration-select"
+          value={duration}
+          onChange={(e) => setDuration(e.target.value)}
+        >
+          <option value="daily">Daily</option>
+          <option value="weekly">Weekly</option>
+          <option value="monthly">Monthly</option>
+          <option value="yearly">Yearly</option>
+        </select>
 
-            <button type="submit" className="add-button" disabled={!taskName.trim()}>
-              <Plus size={16} />
-              Add task
-            </button>
-          </form>
+        <input
+          type="text"
+          className="task-input"
+          placeholder="Task"
+          value={taskName}
+          onChange={(e) => setTaskName(e.target.value)}
+        />
+
+        <button type="submit" className="add-button" disabled={!taskName.trim()}>
+          <Plus size={16} />
+          Add task
+        </button>
+      </form>
         </div>
-      </nav>
+        </div>
+     </nav>
+
 
       {/* Filter Buttons */}
       <div className="filter-section">
