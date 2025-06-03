@@ -1,5 +1,3 @@
-"use client"
-
 import { useState } from "react"
 import { Edit, Trash2, Save, X } from "lucide-react"
 import "../styles/weekly.css"

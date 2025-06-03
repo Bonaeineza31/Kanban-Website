@@ -1,4 +1,3 @@
-"use client"
 
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom"
 import { useState } from "react"
@@ -55,12 +54,10 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* Redirect root to all tasks */}
         <Route path="/" element={<Navigate to="/all" replace />} />
 
-        {/* Main layout with navbar */}
         <Route path="/" element={<Layout onAddTask={addTask} />}>
-          {/* Task routes */}
+
           <Route path="daily" element={<Daily tasks={tasks} onEditTask={editTask} onDeleteTask={deleteTask} />} />
           <Route path="weekly" element={<Weekly tasks={tasks} onEditTask={editTask} onDeleteTask={deleteTask} />} />
           <Route path="monthly" element={<Monthly tasks={tasks} onEditTask={editTask} onDeleteTask={deleteTask} />} />

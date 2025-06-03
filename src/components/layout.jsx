@@ -1,5 +1,3 @@
-"use client"
-
 import { Outlet, useNavigate, useLocation } from "react-router-dom"
 import { useState, useEffect } from "react"
 import { Plus, Calendar, Clock, BarChart3, CalendarDays } from "lucide-react"
@@ -53,7 +51,7 @@ function Layout({ onAddTask }) {
       <nav className="navbar">
         <div className="navbar-container">
           <h1 className="navbar-title">
-            Make a better plan
+             Make a <span style={{ color: '#b5baff' }}>better</span> plan
             <br />
             for your life
           </h1>
@@ -101,7 +99,6 @@ function Layout({ onAddTask }) {
         </div>
       </div>
 
-      {/* Content area - will render the current route */}
       <Outlet />
     </div>
   )
