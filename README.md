@@ -21,7 +21,7 @@ Feel free to access it at https://kanban-website-nine.vercel.app/
 - Beautiful color theme with soft rounded layout
 
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **React** (with Hooks)
 - **React Router v6**
@@ -47,6 +47,6 @@ Make sure you have Node.js and npm installed.
 
 
 #### Acknowledgements
-Built with ❤️ by Ineza Gisubizo boane.
+Built with  by Ineza Gisubizo boane.
 
 Let me know if you want a dark/light theme toggle or animations added.
