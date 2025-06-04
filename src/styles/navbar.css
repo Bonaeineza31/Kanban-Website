@@ -172,32 +172,54 @@
   .navbar {
     padding: 1.5rem 1rem;
     border-radius: 1rem;
+    width: 95%;
+    margin: 1.5rem auto;
   }
 
   .navbar-title {
-    font-size: 2rem;
+    font-size: 1.75rem;
+    text-align: center;
+  }
+
+  .navbar-subtitle {
+    font-size: 0.95rem;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 90%;
   }
 
   .navbar-bottom {
     flex-direction: column;
     align-items: stretch;
-    gap: 1rem;
+    gap: 1.25rem;
+    margin-top: 1.25rem;
   }
 
-  .navbar-subtitle,
   .navbar-form {
+    flex-direction: column;
+    align-items: stretch;
     width: 100%;
+    gap: 0.75rem;
   }
 
   .duration-select,
   .task-input,
   .add-button {
     width: 100%;
-    max-width: none;
+    max-width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
   }
 
   .filter-container {
     justify-content: center;
     padding: 0 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .filter-button {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.9rem;
   }
 }
