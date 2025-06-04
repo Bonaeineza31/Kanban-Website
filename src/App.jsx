@@ -9,28 +9,29 @@ import All from "./components/all"
 
 function App() {
   const [tasks, setTasks] = useState([
-    // Daily tasks
-    { id: 1, name: "Morning workout", duration: "daily", createdAt: new Date() },
-    { id: 2, name: "Read for 30 minutes", duration: "daily", createdAt: new Date() },
-    { id: 3, name: "Check emails", duration: "daily", createdAt: new Date() },
-    { id: 4, name: "Practice coding", duration: "daily", createdAt: new Date() },
 
-    // Weekly tasks
-    { id: 5, name: "Team meeting", duration: "weekly", createdAt: new Date() },
-    { id: 6, name: "Grocery shopping", duration: "weekly", createdAt: new Date() },
-    { id: 7, name: "Clean the house", duration: "weekly", createdAt: new Date() },
-    { id: 8, name: "Call family", duration: "weekly", createdAt: new Date() },
+  // Daily tasks
+  { id: 1, name: "Review class notes", duration: "daily", createdAt: new Date() },
+  { id: 2, name: "Do assigned readings", duration: "daily", createdAt: new Date() },
+  { id: 3, name: "Check school email", duration: "daily", createdAt: new Date() },
+  { id: 4, name: "Prepare for tomorrow's classes", duration: "daily", createdAt: new Date() },
 
-    // Monthly tasks
-    { id: 9, name: "Pay bills", duration: "monthly", createdAt: new Date() },
-    { id: 10, name: "Review budget", duration: "monthly", createdAt: new Date() },
-    { id: 11, name: "Car maintenance", duration: "monthly", createdAt: new Date() },
+  // Weekly tasks
+  { id: 5, name: "Finish weekly assignments", duration: "weekly", createdAt: new Date() },
+  { id: 6, name: "Attend study group", duration: "weekly", createdAt: new Date() },
+  { id: 7, name: "Clean up study area", duration: "weekly", createdAt: new Date() },
+  { id: 8, name: "Plan next week's schedule", duration: "weekly", createdAt: new Date() },
 
-    // Yearly tasks
-    { id: 12, name: "Annual health checkup", duration: "yearly", createdAt: new Date() },
-    { id: 13, name: "File tax returns", duration: "yearly", createdAt: new Date() },
-    { id: 14, name: "Plan vacation", duration: "yearly", createdAt: new Date() },
-  ])
+  // Monthly tasks
+  { id: 9, name: "Organize class materials", duration: "monthly", createdAt: new Date() },
+  { id: 10, name: "Review previous topics", duration: "monthly", createdAt: new Date() },
+  { id: 11, name: "Meet with academic advisor", duration: "monthly", createdAt: new Date() },
+
+  // Yearly tasks
+  { id: 12, name: "Register for new semester", duration: "yearly", createdAt: new Date() },
+  { id: 13, name: "Renew student ID", duration: "yearly", createdAt: new Date() },
+  { id: 14, name: "Update resume/CV", duration: "yearly", createdAt: new Date() },
+])
 
   const addTask = (name, duration) => {
     const newTask = {
